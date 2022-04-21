@@ -1,0 +1,41 @@
+@import url('https://use.typekit.net/txb1hey.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section {
+	@apply p-10;
+}
+
+.wrapper {
+	@apply max-w-7xl mx-auto;
+}
+
+body {
+	@apply antialiased;
+}
+
+.desktop-thumbs .splide__list {
+	@apply grid grid-cols-2 gap-4;
+}
+
+.desktop-thumbs .splide__list li {
+	@apply rounded-md overflow-hidden;
+}
+
+.desktop-thumbs .splide__list li.is-active {
+	@apply border-me-green;
+}
+
+.desktop-thumbs .splide__slide {
+	border: none !important;
+}
+
+.desktop-thumbs .splide__slide.is-active {
+	border: 2px solid #1f7339 !important;
+}
+
+.rounded-popup-image .splide__slide {
+	@apply rounded-md;
+}
